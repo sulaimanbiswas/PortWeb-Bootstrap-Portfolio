@@ -1,0 +1,9 @@
+.carousel .carousel-item {
+  height: 500px !important;
+  object-fit: cover;
+}
+
+.carousel .carousel-item img {
+  height: 500px !important;
+  object-fit: cover;
+}
