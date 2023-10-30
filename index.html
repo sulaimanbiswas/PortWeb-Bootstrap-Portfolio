@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
@@ -40,16 +40,18 @@
             style="--bs-scroll-height: 500px"
           >
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="#blog">Blog</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -68,7 +70,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -87,11 +89,11 @@
     </nav>
 
     <!-- Hero -->
-    <div id="carouselExampleCaptions" class="carousel slide mb-5">
+    <div id="home" class="carousel slide mb-5">
       <div class="carousel-indicators">
         <button
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#home"
           data-bs-slide-to="0"
           class="active"
           aria-current="true"
@@ -99,13 +101,13 @@
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#home"
           data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#home"
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
@@ -172,7 +174,7 @@
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleCaptions"
+        data-bs-target="#home"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -181,7 +183,7 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleCaptions"
+        data-bs-target="#home"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -229,7 +231,7 @@
     </div>
 
     <!-- About -->
-    <div class="container mb-5" id="about">
+    <div class="container mb-5 pt-5" id="about">
       <div class="text-center mb-3">
         <h1 class="text-muted">About me</h1>
       </div>
@@ -269,12 +271,20 @@
             quibusdam, quia, voluptate quod quos voluptas consequatur quae
             voluptatibus quidem doloribus.
           </p>
+          <button
+            type="button"
+            class="btn btn-dark"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Download CV
+          </button>
         </div>
       </div>
     </div>
 
     <!-- Portfolio -->
-    <div class="bg-body-secondary pt-5">
+    <div class="bg-body-secondary pt-5" id="portfolio">
       <div class="container pb-5">
         <div class="text-center my-3 pb-4">
           <h1 class="text-muted">My Portfolio</h1>
@@ -381,7 +391,7 @@
     </div>
 
     <!-- Blog -->
-    <div class="container pt-5 pb-5">
+    <div class="container pt-5 pb-5" id="blog">
       <div class="text-center my-3 pb-4">
         <h1 class="text-muted">My Blogs</h1>
       </div>
@@ -759,7 +769,7 @@
     </div>
 
     <!-- Contact -->
-    <div class="bg-body-secondary">
+    <div class="bg-body-secondary" id="contact">
       <div class="container pt-5 pb-5">
         <div class="text-center my-3 pb-4">
           <h1 class="text-muted">Get in Touch</h1>
@@ -790,7 +800,7 @@
                 <textarea
                   class="form-control"
                   id="message"
-                  rows="3"
+                  rows="7"
                   placeholder="Enter your message"
                 ></textarea>
               </div>
@@ -813,7 +823,9 @@
     </div>
 
     <!-- Footer -->
-    <footer class="bg-body-tertiary text-center text-lg-start">
+    <footer
+      class="bg-body-tertiary text-center text-lg-start border-top border-black"
+    >
       <div class="container p-4">
         <div class="row">
           <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
@@ -885,7 +897,8 @@
       </div>
 
       <div class="text-center p-3 bg-body-secondary text-dark">
-        &copy; 2021 PortWeb
+        &copy; 2023 All rights reserved by
+        <a href="#" class="text-dark text-decoration-none">PortWeb</a>
       </div>
     </footer>
 
